@@ -11,8 +11,12 @@ repositories {
     maven("https://jogamp.org/deployment/maven")
 }
 
+// You might need to update this path to your sketchbook location
+val sketchbook = "${System.getProperty("user.home")}/Documents/Processing"
+
 dependencies {
     implementation("org.processing:core:4.3.4")
+    implementation(fileTree("$sketchbook/libraries").apply { include("**/*.jar") })
 }
 
 kotlin {
