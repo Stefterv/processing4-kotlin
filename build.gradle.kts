@@ -15,7 +15,7 @@ repositories {
 val sketchbook = "${System.getProperty("user.home")}/Documents/Processing"
 
 dependencies {
-    implementation("org.processing:core:4.3.4")
+    implementation("org.processing:core:4.4.10")
     implementation(fileTree("$sketchbook/libraries").apply { include("**/*.jar") })
 }
 
